@@ -22,6 +22,13 @@ namespace Certifast.Console.Services
         {
             AlertDocument AlertDb = new AlertDocument(alert);
             Alerts.Add(AlertDb);
+            
+        }
+        public void Update(Alert alert)
+        {
+            var AlertToUpdate = Alerts.Find(x => x.Alert.DateToSend == alert.DateToSend);
+            Alerts.Remove(AlertToUpdate);
+            Alerts.Add(new AlertDocument(alert));
         }
     }
 

@@ -30,20 +30,18 @@ internal class Program
             EnableRaisingEvents = true
         };
 
-        watcher.Created += OnArquivoDetectado;
+         watcher.Created += OnArquivoDetectado;
+        // Entender pr ta rodando o Task antes de compilar a planilha!!
+        
+            //var alertsToday = noSqlDataBase.GetAlerts(DateTime.Today);
+            //foreach (var ale in alertsToday)
+            //{
+            //    EmailSender.Send(ale.EmailAdress, ale.Email);
+            //    ale.Sent = true;
+            //    noSqlDataBase.Store(ale);
+            //}
 
-        Task.Run(() =>
-        {
-            
-                var alertsToday = noSqlDataBase.GetAlerts(DateTime.Today);
-                foreach (var ale in alertsToday)
-                {
-                    EmailSender.Send(ale.EmailAdress, ale.Email);
-                    ale.Sent = true;
-                    noSqlDataBase.Store(ale);
-                }
-            
-        });
+        
 
         System.Console.WriteLine("⏳ Aguardando planilhas para processar...");
         System.Console.ReadLine(); // Mantém o app vivo
@@ -65,6 +63,16 @@ internal class Program
             }
 
         }
+        //Colocar isso aqui em um metodo:
+        var alertsToday = noSqlDataBase.GetAlerts(DateTime.Today);
+        foreach (var ale in alertsToday)
+        {
+            EmailSender.Send(ale.EmailAdress, ale.Email);
+            ale.Sent = true;
+            //noSqlDataBase.Store(ale);
+        }
+        //Just to test
+        noSqlDataBase.GetAlerts(DateTime.Now);
 
 
 

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Certifast.Console")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1ad47264e80b0bf008827e689796d65a722feba3")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+6f2fe13baadf48be4d4f48f5b49d60766b93456d")]
 [assembly: System.Reflection.AssemblyProductAttribute("Certifast.Console")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Certifast.Console")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
