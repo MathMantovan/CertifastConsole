@@ -28,3 +28,4 @@ C:\Users\avmd_\OneDrive\Área de Trabalho\Matheus\Programação\VisualStudio\Cer
 C:\Users\avmd_\OneDrive\Área de Trabalho\Matheus\Programação\VisualStudio\Certifast.Console\Certifast.Console\bin\Debug\net8.0\runtimes\win\lib\net8.0\System.Security.Cryptography.Pkcs.dll
 C:\Users\avmd_\OneDrive\Área de Trabalho\Matheus\Programação\VisualStudio\Certifast.Console\Certifast.Console\obj\Debug\net8.0\Certifast.Console.csproj.AssemblyReference.cache
 C:\Users\avmd_\OneDrive\Área de Trabalho\Matheus\Programação\VisualStudio\Certifast.Console\Certifast.Console\obj\Debug\net8.0\Certifas.86CD9371.Up2Date
+C:\Users\avmd_\OneDrive\Área de Trabalho\Matheus\Programação\VisualStudio\Certifast.Console\Certifast.Console\obj\Debug\net8.0\Certifast.Console.sourcelink.json

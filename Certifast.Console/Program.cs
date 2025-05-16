@@ -13,14 +13,14 @@ internal class Program
 
     public static IExcelProcessor ExcelProcessor = new ExcelProcessor();
     public static IEmailSender EmailSender = new EmailSender();
-    public static List<Alert> Alerts = new List<Alert>();
+    public static INoSqlDataBase noSqlDataBase = new NoSqlDataBase();
 
 
     public static void Main(string[] args)
     {
         System.Console.WriteLine("Hello, World!");
-       
-        string File = @"C:\Users\avmd_\OneDrive\Área de Trabalho\Matheus\Programação";
+
+        string File = "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Renovacoes";
 
         var watcher = new FileSystemWatcher
         {
@@ -34,19 +34,15 @@ internal class Program
 
         Task.Run(() =>
         {
-            foreach (var ale in Alerts)
-            {
-                if (ale.DateToSend == DateTime.Today)
+            
+                var alertsToday = noSqlDataBase.GetAlerts(DateTime.Today);
+                foreach (var ale in alertsToday)
                 {
                     EmailSender.Send(ale.EmailAdress, ale.Email);
-
+                    ale.Sent = true;
+                    noSqlDataBase.Store(ale);
                 }
-                //while (true)
-                //{
-                //    System.Console.WriteLine("To sendo executado");
-                //    Task.Delay(1000).Wait();
-                //}
-            }
+            
         });
 
         System.Console.WriteLine("⏳ Aguardando planilhas para processar...");
@@ -56,20 +52,25 @@ internal class Program
 
     private static void OnArquivoDetectado(object sender, FileSystemEventArgs e)
     {
+
         System.Console.WriteLine($"\n📥 Arquivo detectado: {e.Name}");
         var certificates = ExcelProcessor.Process(e.FullPath);
-        
-        foreach(var certificate in certificates)
+
+        foreach (var certificate in certificates)
         {
             var alerts = AlertParser.GetAlertsFromCertificate(certificate);
-            Alerts.AddRange(alerts);
+            foreach (var ale in alerts)
+            {
+                noSqlDataBase.Store(ale);
+            }
+
         }
 
-        
+
 
         File.Delete(e.FullPath);
         System.Console.WriteLine("✅ Arquivo processado e excluído.");
     }
-    
-        
+
+
 }

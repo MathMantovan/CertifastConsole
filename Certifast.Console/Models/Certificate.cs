@@ -6,8 +6,6 @@ namespace Certifast.Console.Models
 {
     public class Certificate
     {
-
-
         public string Order { get; set; }
         public DateTime ExpiringData { get; set; }
         public string ClientName { get; set; }

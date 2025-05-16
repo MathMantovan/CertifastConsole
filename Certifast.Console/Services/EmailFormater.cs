@@ -1,14 +1,14 @@
 ﻿using Certifast.Console.Models;
 
 namespace Certifast.Console.Services
-{
-    
+{    
     public class EmailFormater
     {
 
         public static EmailData BuildEmail(Certificate certificate)
         {
             EmailData email = new EmailData();
+            email.Certificate = certificate;
             email.Expiring = certificate.GetDaysToExpire();
             email.Body = FormatBody(certificate, email.Expiring);
             email.Subject = FormatSubject(certificate, email.Expiring);
@@ -18,6 +18,7 @@ namespace Certifast.Console.Services
         public static EmailData BuildEmail(Certificate certificate, int daysToExpire)
         {
             EmailData email = new EmailData();
+            email.Certificate = certificate;
             email.Expiring = daysToExpire;
             email.Body = FormatBody(certificate, email.Expiring);
             email.Subject = FormatSubject(certificate, email.Expiring);
