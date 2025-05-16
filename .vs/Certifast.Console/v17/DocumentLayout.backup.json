@@ -1,0 +1,156 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\models\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\models\\alert.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\services\\emailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\services\\interface\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\services\\interface\\iemailsender.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\models\\emaildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\models\\emaildata.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\services\\excelprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\services\\excelprocessor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\models\\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\models\\certificate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|c:\\users\\avmd_\\onedrive\\\u00E1rea de trabalho\\matheus\\programa\u00E7\u00E3o\\visualstudio\\certifast.console\\certifast.console\\services\\emailformater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{BC93EE58-5AA7-4BC9-BB40-EC013A3FC281}|Certifast.Console\\Certifast.Console.csproj|solutionrelative:certifast.console\\services\\emailformater.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 6,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "IEmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\Interface\\IEmailSender.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Services\\Interface\\IEmailSender.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\Interface\\IEmailSender.cs",
+              "RelativeToolTip": "Certifast.Console\\Services\\Interface\\IEmailSender.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T22:25:02.883Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "EmailData.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Models\\EmailData.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Models\\EmailData.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Models\\EmailData.cs",
+              "RelativeToolTip": "Certifast.Console\\Models\\EmailData.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T21:04:20.162Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Alert.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Models\\Alert.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Models\\Alert.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Models\\Alert.cs",
+              "RelativeToolTip": "Certifast.Console\\Models\\Alert.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T20:46:12.99Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmailFormater.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\EmailFormater.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Services\\EmailFormater.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\EmailFormater.cs",
+              "RelativeToolTip": "Certifast.Console\\Services\\EmailFormater.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABQAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:23:10.546Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "EmailSender.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\EmailSender.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Services\\EmailSender.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\EmailSender.cs",
+              "RelativeToolTip": "Certifast.Console\\Services\\EmailSender.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAqwBYAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:12:35.781Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ExcelProcessor.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\ExcelProcessor.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Services\\ExcelProcessor.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Services\\ExcelProcessor.cs",
+              "RelativeToolTip": "Certifast.Console\\Services\\ExcelProcessor.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAgwBkAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-15T17:07:43.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Program.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Program.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Program.cs",
+              "RelativeToolTip": "Certifast.Console\\Program.cs",
+              "ViewState": "AgIAABYAAAAAAAAAAAAgwCwAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-21T18:17:09.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Certificate.cs",
+              "DocumentMoniker": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Models\\Certificate.cs",
+              "RelativeDocumentMoniker": "Certifast.Console\\Models\\Certificate.cs",
+              "ToolTip": "C:\\Users\\avmd_\\OneDrive\\\u00C1rea de Trabalho\\Matheus\\Programa\u00E7\u00E3o\\VisualStudio\\Certifast.Console\\Certifast.Console\\Models\\Certificate.cs",
+              "RelativeToolTip": "Certifast.Console\\Models\\Certificate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADkAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-28T19:47:59.183Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
