@@ -31,15 +31,7 @@ internal class Program
         };
 
          watcher.Created += OnArquivoDetectado;
-        // Entender pr ta rodando o Task antes de compilar a planilha!!
-
-        //var alertsToday = noSqlDataBase.GetAlerts(DateTime.Today);
-        //foreach (var ale in alertsToday)
-        //{
-        //    EmailSender.Send(ale.EmailAdress, ale.Email);
-        //    ale.Sent = true;
-        //    noSqlDataBase.Store(ale);
-        //}
+              
 
         var files = Directory.GetFiles(FilePath);
         foreach (var file in files)
@@ -81,10 +73,7 @@ internal class Program
                 ale.Sent = true;
                 //noSqlDataBase.Store(ale);
             }
-            //Just to test
-            noSqlDataBase.GetAlerts(DateTime.Now);
-
-
+            
 
             File.Delete(fullPath);
             System.Console.WriteLine("✅ Arquivo processado e excluído.");

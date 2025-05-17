@@ -4,6 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using Certifast.Console.Models;
+using Certifast.Console.Services.Exception;
 
 namespace Certifast.Console.Services
 {
@@ -11,8 +12,7 @@ namespace Certifast.Console.Services
     {
         public static List<Alert> GetAlertsFromCertificate(Certificate cert)
         {
-            if (cert.Order == null)
-                throw new Exception("");
+            HasCertificateInfo(cert);
 
             var alert = new List<Alert>();
             //1
@@ -36,6 +36,16 @@ namespace Certifast.Console.Services
             alert.Add(new Alert(order, emailAdress, Email, Sent, dateToSend));
 
             return alert;
+        }
+
+        private static void HasCertificateInfo(Certificate cert)
+        {
+            if (cert.Order == "")
+                throw new AlertException("Certificado sem numero de pedido");
+            if (cert.ExpiringData == null )
+                throw new AlertException(" Certificado sem data de renovação");
+            if (cert.ClientEmail == "")
+                throw new AlertException("Certificado sem Email para contato");
         }
     }
 }
