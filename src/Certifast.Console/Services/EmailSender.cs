@@ -10,11 +10,11 @@ namespace Certifast.Console.Services
         public void Send(string emailAdress, EmailData email)
         {
             File.AppendAllLines("C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\emails.txt", new List<string> { email.Body });
-            return;
+          //  return;
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("caio.lima.melo@gmail.com", "htmf psgw dmng xvdc"),
+                Credentials = new NetworkCredential("caio.lima.melo@gmail.con", "htmf psgw dmng xvdc"),
                 EnableSsl = true,
             };
             var mailMessage = new MailMessage

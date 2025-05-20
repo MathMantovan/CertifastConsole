@@ -1,4 +1,6 @@
-﻿using Certifast.Console.Models;
+﻿using System.Runtime.ConstrainedExecution;
+using Certifast.Console.Models;
+using Certifast.Console.Services.Exception;
 
 namespace Certifast.Console.Services
 {    
@@ -7,6 +9,7 @@ namespace Certifast.Console.Services
 
         public static EmailData BuildEmail(Certificate certificate)
         {
+            
             EmailData email = new EmailData();
             email.Certificate = certificate;
             email.Expiring = certificate.GetDaysToExpire();
@@ -30,14 +33,18 @@ namespace Certifast.Console.Services
         {
             string body = null;
 
-            var qualquer = certificate.HasCnpj()
-                ? $"a empresa de Cnpj {certificate.Cnpj}"
-                : $"ao Cpf {certificate.Cpf}";
+            var CpfOrCnpj = certificate.HasCnpj()
+                ? $"ao Cpf {certificate.Cpf}" 
+                : $"a empresa de Cnpj {certificate.Cnpj}";
+            var DaysToExpire = (certificate.ExpiringData - DateTime.Today).Days;
+            var DateFormater = DaysToExpire == 1
+                ? $"{DaysToExpire} dia"
+                : $"{DaysToExpire} dias";
 
             body = $@"
                 Olá {certificate.ClientName},
 
-                Este é um lembrete de que seu certificado digital do tipo **{certificate.Type}** referente {qualquer} irá vencer em {expiringDays} dias.
+                Este é um lembrete de que seu certificado digital do tipo **{certificate.Type}** referente {CpfOrCnpj} irá vencer em {DateFormater}.
 
                 
                 Recomendamos que você inicie o processo de renovação o quanto antes para evitar interrupções em suas atividades digitais.

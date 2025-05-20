@@ -57,7 +57,7 @@ namespace Certifast.Console.Unit.Tests.Services
             var certificate = new Certificate(order, expiringData, clientName, clientEmail, cell, type, responseAgent, cpf, cnpj, companyName);
 
             //Act
-            var ret = Assert.Throws<AlertException>(() => AlertParser.GetAlertsFromCertificate(certificate));
+            var ret = Assert.Throws<CertificateException>(() => AlertParser.GetAlertsFromCertificate(certificate));
 
             //Assert
             Assert.That(ret.Message, Is.EqualTo("Certificado sem Email para contato"));

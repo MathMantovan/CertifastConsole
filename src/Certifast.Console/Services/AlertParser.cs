@@ -41,11 +41,13 @@ namespace Certifast.Console.Services
         private static void HasCertificateInfo(Certificate cert)
         {
             if (cert.Order == "")
-                throw new AlertException("Certificado sem numero de pedido");
+                throw new CertificateException("Certificado sem numero de pedido");
             if (cert.ExpiringData == null )
-                throw new AlertException(" Certificado sem data de renovação");
+                throw new CertificateException(" Certificado sem data de renovação");
+            if (cert.ExpiringData <= DateTime.Today)
+                throw new CertificateException(" Certificado tem data de vencimento anterior ou igual a hoje");
             if (cert.ClientEmail == "")
-                throw new AlertException("Certificado sem Email para contato");
+                throw new CertificateException("Certificado sem Email para contato");
         }
     }
 }

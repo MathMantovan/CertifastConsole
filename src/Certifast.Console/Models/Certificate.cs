@@ -33,7 +33,7 @@ namespace Certifast.Console.Models
 
         public bool HasCnpj()
         {
-            return Cnpj == null;
+            return Cnpj == null || Cnpj == "";
 
         }
         public int GetDaysToExpire()
@@ -43,17 +43,17 @@ namespace Certifast.Console.Models
             if (DateTime.Today.AddDays(1) == ExpiringData.Date)
             {
                 // Expira amanhã
-                expiring = (DateTime.Today - ExpiringData.Date).Days;
+                expiring = (ExpiringData.Date - DateTime.Today).Days;
             }
             else if (DateTime.Today.AddDays(7) == ExpiringData.Date)
             {
                 // expira em 7
-                expiring = (DateTime.Today - ExpiringData.Date).Days;
+                expiring = (ExpiringData.Date - DateTime.Today).Days;
             }
             else if (DateTime.Today.AddMonths(1) == ExpiringData.Date)
             {
                 //expira em 30
-                expiring = (DateTime.Today - ExpiringData.Date).Days;
+                expiring = (ExpiringData.Date - DateTime.Today).Days;
             }
             return expiring;
         }
