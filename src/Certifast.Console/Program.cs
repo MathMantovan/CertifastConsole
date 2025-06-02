@@ -10,18 +10,17 @@ using OfficeOpenXml;
 namespace CertiFast.Console;
 internal class Program
 {
-
     public static IExcelProcessor ExcelProcessor = new ExcelProcessor();
     public static IEmailSender EmailSender = new EmailSender();
     public static INoSqlDataBase noSqlDataBase = new NoSqlDataBase();
 
+    public static IProcessor processor = new Processor(ExcelProcessor, EmailSender, noSqlDataBase);
 
     public static void Main(string[] args)
     {
         System.Console.WriteLine("Hello, World!");
 
         string FilePath = "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Renovacoes";
-
         var watcher = new FileSystemWatcher
         {
             Path = FilePath,
@@ -30,13 +29,13 @@ internal class Program
             EnableRaisingEvents = true
         };
 
-         watcher.Created += OnArquivoDetectado;
-              
+        watcher.Created += OnArquivoDetectado;
+
 
         var files = Directory.GetFiles(FilePath);
         foreach (var file in files)
         {
-            ConsumeFile(Path.GetFileName(file), file);
+            processor.ProcessFile(Path.GetFileName(file), file);
         }
 
         System.Console.WriteLine("⏳ Aguardando planilhas para processar...");
@@ -46,45 +45,11 @@ internal class Program
 
     private static void OnArquivoDetectado(object sender, FileSystemEventArgs e)
     {
-        ConsumeFile(e.Name, e.FullPath);
-        
+
+        processor.ProcessFile(e.Name, e.FullPath);
+
     }
-    public static void ConsumeFile(string fileName, string fullPath)
-    {
-        try
-        {
-            System.Console.WriteLine($"\n📥 Arquivo detectado: {fileName}");
-            var certificates = ExcelProcessor.Process(fullPath);
-
-            foreach (var certificate in certificates)
-            {
-                var alerts = AlertParser.GetAlertsFromCertificate(certificate);
-                foreach (var ale in alerts)
-                {
-                    noSqlDataBase.Store(ale);
-                }
-
-            }
-            //Colocar isso aqui em um metodo:
-            var alertsToday = noSqlDataBase.GetAlerts(DateTime.Today);
-            foreach (var ale in alertsToday)
-            {
-                EmailSender.Send(ale.EmailAdress, ale.Email);
-                ale.Sent = true;
-                //noSqlDataBase.Store(ale);
-            }
-            
-
-            File.Delete(fullPath);
-            System.Console.WriteLine("✅ Arquivo processado e excluído.");
-        }
-        catch (Exception ex)
-        {
-            //Deu erro: ex.Message
-            throw;
-        }
-        
-    }
-
 
 }
+
+
