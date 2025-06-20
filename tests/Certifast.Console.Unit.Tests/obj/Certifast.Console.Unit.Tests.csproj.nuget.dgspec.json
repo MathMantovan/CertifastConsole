@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj": {}
+    "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj": {}
   },
   "projects": {
-    "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\src\\Certifast.Console\\Certifast.Console.csproj": {
+    "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\Certifast.Console.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\src\\Certifast.Console\\Certifast.Console.csproj",
+        "projectUniqueName": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\Certifast.Console.csproj",
         "projectName": "Certifast.Console",
-        "projectPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\src\\Certifast.Console\\Certifast.Console.csproj",
+        "projectPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\Certifast.Console.csproj",
         "packagesPath": "C:\\Users\\avmd_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\src\\Certifast.Console\\obj\\",
+        "outputPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -26,6 +26,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -44,7 +45,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -71,18 +72,18 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj": {
+    "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj",
         "projectName": "Certifast.Console.Unit.Tests",
-        "projectPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj",
+        "projectPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj",
         "packagesPath": "C:\\Users\\avmd_\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\tests\\Certifast.Console.Unit.Tests\\obj\\",
+        "outputPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\tests\\Certifast.Console.Unit.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -97,14 +98,15 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\src\\Certifast.Console\\Certifast.Console.csproj": {
-                "projectPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\src\\Certifast.Console\\Certifast.Console.csproj"
+              "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\Certifast.Console.csproj": {
+                "projectPath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\Certifast.Console.csproj"
               }
             }
           }
@@ -119,7 +121,7 @@
           "auditLevel": "low",
           "auditMode": "direct"
         },
-        "SdkAnalysisLevel": "9.0.200"
+        "SdkAnalysisLevel": "9.0.300"
       },
       "frameworks": {
         "net8.0": {
@@ -162,7 +164,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.201/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

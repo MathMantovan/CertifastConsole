@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "zdkjnqR0QAc=",
+  "dgSpecHash": "GlASfNzVX48=",
   "success": true,
-  "projectFilePath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\src\\Certifast.Console\\Certifast.Console.csproj",
+  "projectFilePath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\Certifast.Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avmd_\\.nuget\\packages\\epplus\\8.0.5\\epplus.8.0.5.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\epplus.interfaces\\8.0.0\\epplus.interfaces.8.0.0.nupkg.sha512",

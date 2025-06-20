@@ -34,7 +34,7 @@ namespace Certifast.Console.Services
             }
             catch (CertificateException ex)
             {
-                //Deu erro: ex.Message
+                System.Console.WriteLine(ex.Message);
                 throw;
             }
         }

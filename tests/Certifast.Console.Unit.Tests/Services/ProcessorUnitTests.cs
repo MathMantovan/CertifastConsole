@@ -1,16 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Runtime.CompilerServices;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
-using Certifast.Console.Models;
+﻿using Certifast.Console.Models;
 using Certifast.Console.Services;
 using Certifast.Console.Services.Interface;
 using Moq;
 using NUnit.Framework;
-using OfficeOpenXml.Drawing;
+using FluentAssertions;
+
 
 namespace Certifast.Console.Unit.Tests.Services
 {
@@ -20,7 +14,8 @@ namespace Certifast.Console.Unit.Tests.Services
         private readonly Mock<IExcelProcessor> _excelProcessor;
         private readonly Mock<IEmailSender> _emailSender;
         private readonly Mock<INoSqlDataBase> _noSqlDataBase;
-        private readonly Mock<IProcessor> _iProcessor;
+        private Processor _Processor;
+
 
 
         public ProcessorUnitTests()
@@ -28,7 +23,8 @@ namespace Certifast.Console.Unit.Tests.Services
             _excelProcessor = new Mock<IExcelProcessor>();
             _emailSender = new Mock<IEmailSender>();
             _noSqlDataBase = new Mock<INoSqlDataBase>();
-            _iProcessor = new Mock<IProcessor>();
+            _Processor = new Processor(_excelProcessor.Object, _emailSender.Object, _noSqlDataBase.Object);
+
         }
 
         [Test]
@@ -46,58 +42,34 @@ namespace Certifast.Console.Unit.Tests.Services
                             cpf: "123.456.789-00",
                             cnpj: "",
                             companyName: "");
-            EmailData email = new EmailData(cert, Body : "This is the body", Subject : "This is the Subject", Expiring : 2 );         
-                
-            
+            EmailData email = new EmailData();
+                        email.Certificate = cert;
+                        email.Body = "This is the body";
+                        email.Subject = "This is the Subject";
+                        email.Expiring = 2;
+
+
             bool sent = false;
-            datetime datetosend = datetime.today;
-            alert alert1 = new alert(order, emailadress, email, sent, datetosend);
+            DateTime datetosend = DateTime.Today;
+            Alert alert1 = new Alert(cert.Order, cert.ClientEmail, email, sent, datetosend);
 
             _excelProcessor.Setup(x => x.Process(It.IsAny<string>()))
                 .Returns(new List<Certificate> { cert });
 
             _noSqlDataBase.Setup(x => x.GetAlerts(It.IsAny<DateTime>()))
-                .Returns(new List<Alert> { alert });
+                .Returns(new List<Alert> { alert1 });
 
 
             // Act
-            ProcessFile("arquivo.xlsx", "caminho.xlsx");
+            _Processor.ProcessFile("arquivo.xlsx", "caminho.xlsx");
 
             // Assert
-            _emailSenderMock.Verify(e => e.Send(alert.EmailAdress, alert.Email), Times.Once);
-            Assert.IsTrue(alert.Sent);
+            _emailSender.Verify(e => e.Send(alert1.EmailAdress, alert1.Email), Times.Once);
+            alert1.Sent.Should().BeTrue();
+            _excelProcessor.Verify(x => x.Process("caminho.xlsx"), Times.Once);
+            _noSqlDataBase.Verify(x => x.Store(It.IsAny<Alert>()), Times.AtLeastOnce);
+            _noSqlDataBase.Verify(x => x.GetAlerts(DateTime.Today), Times.Once);
+
         }
-
-
-
-
-
-
-
-        //public void SendDailyAlerts_ShoudGetAlertList_SendEmailAlerts()
-        //{
-        //    // Arrange
-
-        //    string EmailAdress = "math@mari";
-        //    string Order = "144319";
-        //    EmailData Email = new EmailData
-        //    {
-        //        Body = "This is the email body",
-        //        Certificate = null,
-        //        Expiring = 1,
-        //        Subject = "This is de Subject"
-        //    };
-        //    bool Sent = false;
-        //    DateTime DateToSend = DateTime.Today;
-        //    Alert alert1 = new Alert(Order, EmailAdress, Email, Sent, DateToSend);
-        //    List<Alert> alerts = new List<Alert>();
-        //    alerts.Add(alert1);
-
-        //    // Act
-        //    _emailSender.Setup(s => s.Send(alert1.EmailAdress, alert1.Email)).Verifiable();
-
-
-
-        //}
     }
 }

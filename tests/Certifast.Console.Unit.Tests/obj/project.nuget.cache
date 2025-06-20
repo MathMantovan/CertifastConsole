@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "gKdDvrbZ2HQ=",
+  "dgSpecHash": "gzVOTNhsIvA=",
   "success": true,
-  "projectFilePath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Matheus\\Programação\\VisualStudio\\Certifast.Console\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj",
+  "projectFilePath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avmd_\\.nuget\\packages\\castle.core\\5.1.1\\castle.core.5.1.1.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\epplus\\8.0.5\\epplus.8.0.5.nupkg.sha512",
