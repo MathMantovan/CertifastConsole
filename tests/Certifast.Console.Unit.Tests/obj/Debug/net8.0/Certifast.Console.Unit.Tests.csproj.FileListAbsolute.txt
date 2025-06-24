@@ -361,3 +361,4 @@ C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\tests\Certif
 C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\tests\Certifast.Console.Unit.Tests\obj\Debug\net8.0\Certifas.FD6361B4.Up2Date
 C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\tests\Certifast.Console.Unit.Tests\obj\Debug\net8.0\Certifast.Console.Unit.Tests.genruntimeconfig.cache
 C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\tests\Certifast.Console.Unit.Tests\obj\Debug\net8.0\ref\Certifast.Console.Unit.Tests.dll
+C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\tests\Certifast.Console.Unit.Tests\bin\Debug\net8.0\LiteDB.dll

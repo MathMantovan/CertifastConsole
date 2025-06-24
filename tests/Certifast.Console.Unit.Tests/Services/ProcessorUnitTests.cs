@@ -62,6 +62,7 @@ namespace Certifast.Console.Unit.Tests.Services
 
             // Act
             _Processor.ProcessFile("arquivo.xlsx", "caminho.xlsx");
+            
 
             // Assert
             _emailSender.Verify(e => e.Send(alert1.EmailAdress, alert1.Email), Times.Once);

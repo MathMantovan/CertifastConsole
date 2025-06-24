@@ -1,8 +1,4 @@
-﻿using System.Security.Cryptography;
-using Certifast.Console.Models;
-using Certifast.Console.Services;
-
-namespace Certifast.Console.Models
+﻿namespace Certifast.Console.Models
 {
     public class Certificate
     {

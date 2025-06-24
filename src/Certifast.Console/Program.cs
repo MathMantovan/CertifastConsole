@@ -1,7 +1,5 @@
-﻿using Certifast.Console.Models;
-using Certifast.Console.Services;
+﻿using Certifast.Console.Services;
 using Certifast.Console.Services.Interface;
-using OfficeOpenXml;
 // Features:
 // - Process excel spreadsheet with certificates and clients
 // - Monitor expiring certificates
@@ -28,7 +26,6 @@ internal class Program
             NotifyFilter = NotifyFilters.FileName | NotifyFilters.LastWrite,
             EnableRaisingEvents = true
         };
-
         watcher.Created += OnArquivoDetectado;
 
 
@@ -49,7 +46,6 @@ internal class Program
         processor.ProcessFile(e.Name, e.FullPath);
 
     }
-
 }
 
 

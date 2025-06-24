@@ -6,7 +6,6 @@ namespace Certifast.Console.Services
 {    
     public class EmailFormater
     {
-
         public static EmailData BuildEmail(Certificate certificate)
         {
             

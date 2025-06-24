@@ -6,7 +6,7 @@ namespace Certifast.Console.Services.Interface
     {
         List<Alert> GetAlerts(DateTime today);
         void Store(Alert alert);
-        public void Update(Alert alert);
+        public void Update(List<Alert> AlertsUpdated);
 
     }
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "gzVOTNhsIvA=",
+  "dgSpecHash": "xtCaL0dtKWc=",
   "success": true,
   "projectFilePath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\tests\\Certifast.Console.Unit.Tests\\Certifast.Console.Unit.Tests.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\avmd_\\.nuget\\packages\\epplus\\8.0.5\\epplus.8.0.5.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\epplus.interfaces\\8.0.0\\epplus.interfaces.8.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\fluentassertions\\8.2.0\\fluentassertions.8.2.0.nupkg.sha512",
+    "C:\\Users\\avmd_\\.nuget\\packages\\litedb\\5.0.21\\litedb.5.0.21.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.codecoverage\\17.13.0\\microsoft.codecoverage.17.13.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
@@ -31,6 +32,7 @@
     "C:\\Users\\avmd_\\.nuget\\packages\\newtonsoft.json\\13.0.1\\newtonsoft.json.13.0.1.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\nunit\\4.3.2\\nunit.4.3.2.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\nunit3testadapter\\5.0.0\\nunit3testadapter.5.0.0.nupkg.sha512",
+    "C:\\Users\\avmd_\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\system.diagnostics.diagnosticsource\\5.0.0\\system.diagnostics.diagnosticsource.5.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\system.diagnostics.eventlog\\6.0.0\\system.diagnostics.eventlog.6.0.0.nupkg.sha512",

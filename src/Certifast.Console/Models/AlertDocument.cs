@@ -1,5 +1,4 @@
-﻿
-namespace Certifast.Console.Models
+﻿namespace Certifast.Console.Models
 {
     public class AlertDocument
     {

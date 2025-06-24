@@ -91,3 +91,4 @@ C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\src\Certifas
 C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\src\Certifast.Console\obj\Debug\net8.0\Certifast.Console.pdb
 C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\src\Certifast.Console\obj\Debug\net8.0\Certifast.Console.genruntimeconfig.cache
 C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\src\Certifast.Console\obj\Debug\net8.0\ref\Certifast.Console.dll
+C:\Users\avmd_\OneDrive\Área de Trabalho\Projetos\CertifastConsole\src\Certifast.Console\bin\Debug\net8.0\LiteDB.dll

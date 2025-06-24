@@ -1,11 +1,12 @@
 {
   "version": 2,
-  "dgSpecHash": "GlASfNzVX48=",
+  "dgSpecHash": "NVtzxSWTTdA=",
   "success": true,
   "projectFilePath": "C:\\Users\\avmd_\\OneDrive\\Área de Trabalho\\Projetos\\CertifastConsole\\src\\Certifast.Console\\Certifast.Console.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\avmd_\\.nuget\\packages\\epplus\\8.0.5\\epplus.8.0.5.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\epplus.interfaces\\8.0.0\\epplus.interfaces.8.0.0.nupkg.sha512",
+    "C:\\Users\\avmd_\\.nuget\\packages\\litedb\\5.0.21\\litedb.5.0.21.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.extensions.configuration\\8.0.0\\microsoft.extensions.configuration.8.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.extensions.configuration.fileextensions\\8.0.1\\microsoft.extensions.configuration.fileextensions.8.0.1.nupkg.sha512",
@@ -15,6 +16,7 @@
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.extensions.filesystemglobbing\\8.0.0\\microsoft.extensions.filesystemglobbing.8.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.extensions.primitives\\8.0.0\\microsoft.extensions.primitives.8.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\microsoft.io.recyclablememorystream\\3.0.1\\microsoft.io.recyclablememorystream.3.0.1.nupkg.sha512",
+    "C:\\Users\\avmd_\\.nuget\\packages\\system.buffers\\4.5.1\\system.buffers.4.5.1.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\system.security.cryptography.pkcs\\8.0.1\\system.security.cryptography.pkcs.8.0.1.nupkg.sha512",
     "C:\\Users\\avmd_\\.nuget\\packages\\system.security.cryptography.xml\\8.0.2\\system.security.cryptography.xml.8.0.2.nupkg.sha512",
