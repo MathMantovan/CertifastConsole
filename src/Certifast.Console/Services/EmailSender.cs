@@ -14,7 +14,7 @@ namespace Certifast.Console.Services
             var smtpClient = new SmtpClient("smtp.gmail.com")
             {
                 Port = 587,
-                Credentials = new NetworkCredential("caio.lima.melo@gmail.con", "htmf psgw dmng xvdc"),
+                Credentials = new NetworkCredential("teste@gmail.com", "alibvra GOUWO 123n ibs"),
                 EnableSsl = true,
             };
             var mailMessage = new MailMessage
